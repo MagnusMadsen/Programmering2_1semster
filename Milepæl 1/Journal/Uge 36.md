@@ -14,14 +14,22 @@
 
 * Hvad har været udfordrende?
 
-
+    Det var en udfordring at forstå og finde rundt i VScode, men ikke destromindre så var forståelsen af opgaverne også svære. 
 
 * Hvordan finder jeg informationer? Kan denne taktik forbedres?
 
+    Jeg tror den bedste måde at udvikle sig på nuværende tidspunkt er at møde til hver en undervisning og følge så godt med som muligt. Sørger for at få læst og lave alle de nødvendige opgaver hertil. 
+
 ## Opgavenoter - rover
 
-* Hvordan anvender jeg det lærte til at løse opgaven?
+* Hvordan anvender jeg det lærte til at løse opgaven? 
 
-* Hvordan undersøger jeg muligheder til videre løsning?
+    På dette tidspunkt tror jeg ikke jeg eller gruppe tænkte på hvordan vi kunne bruge det underviste materiale til roverne. Men set fra nuværendes øjne i uge 39 kan jeg godt se hvordan vi kan bruge string variable til vores rover.
+
+* Hvordan undersøger jeg muligheder til videre løsning? 
+
+    Som nævnt tidligere så tror jeg at det bedste er at følge med i undervisningen, få lavet de opgaver som vi bliver tildelt og hjælpe hinanden i gruppen. 
 
 * Hvordan kommer jeg videre med at bygge roveren?
+
+    Som nævnt tidligere så tror jeg på daværende tidspunkt havde vi ikke nogen ide om hvordan det materiale vi lærte om kunne bruges. end heller hvordan vi kom videre med at bygge roveren. 
