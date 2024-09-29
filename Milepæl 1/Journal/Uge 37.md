@@ -18,12 +18,20 @@
 
 * #### Hvordan finder jeg informationer? Kan denne taktik forbedres? 
 
+    Jeg er lidt i tvivl om hvordan jeg skal finde mere tid i hverdagen. Men altså der må vel bare skæres endnu mere ned på ses med venner og andre sjove ting. 
+
 
 
 ## Opgavenoter - rover
 
-* Hvordan anvender jeg det lærte til at løse opgaven?
+* #### Hvordan anvender jeg det lærte til at løse opgaven?
 
-* Hvordan undersøger jeg muligheder til videre løsning?
+    Jeg tror overordnet det at vi bliver bedre til at kode kan gøre det nemmere at lave roveren. Men de matematiske rente udregninger tror jeg ikke hjælper på vores rover projekt.
 
-* Hvordan kommer jeg videre med at bygge roveren?
+* #### Hvordan undersøger jeg muligheder til videre løsning? 
+
+    Den gode kommunikationer vi har i gruppen er helt klart en must. Vi er gode til at give hinanden plads til at udvikle på de områder der vigtigt for os. Generelt er jeg en person der skal have tingende i hænderne og prøve det mindst 20 gange før jeg husker det og rent faktisk stoler nok på mig selv til at kunne huske ting. Derfor ville et løsningsforslag være at gennemgå opgaverne flere gange istedet for bare kun at lave dem engang. 
+
+* #### Hvordan kommer jeg videre med at bygge roveren?
+
+    En af vores største byrder har været rover basen og dens design. vi skal have fundet ud af hvad der forgår med den base og hvor vigtigt den er for at vi kan begynde at teste de forskellige dele. Derudover ville det være vigtigt at få lidt mere information på hbroer som ville kunne resultere i at vi kunne få motor til at virke afhængigt af inbudt. dette kunne både være med ledninger men jeg ville også kunne begynde at se på noget kode der kan få motorne til at køre frem og tilbage. 
