@@ -8,7 +8,7 @@
 
 * #### Hvad bør jeg undersøge nærmere eller få svar på? 
 
-    Jeg bør undersøge mere omkring hvordan ESP32 fungere sammen med platformio. Forholdet mellem en ESP32 og hardwaren er utrolig dyb selvom det virker som et mere simplet produkt, er det kun min viden for at kodning og den hardware der kan tilkobles en udfordring og derved burde jeg afprøve forskellige LED funktioner, Sensor funktioner, jeg burde undersøge om hvor meget man hardware mæssigt kan tilkoble til en ESP32. Jeg burde undersøge hvad farve kodningen på de individuelle pine betyder og hvilke funktioner de har. 
+    Jeg bør undersøge mere omkring hvordan ESP32 fungere sammen med platformio. Forholdet mellem en ESP32 og hardwaren er utrolig dyb selvom det virker som et mere simplet produkt, er det kun min viden for at kodning og den hardware der kan tilkobles der er en udfordring og derved burde jeg afprøve forskellige funktioner som f.eks. Sensor funktioner. Jeg burde undersøge om hvor meget man hardwaremæssigt kan tilkoble til en ESP32. Jeg burde undersøge hvad farve kodningen på de individuelle pine betyder og hvilke funktioner de har. 
 
 * #### Hvad er jeg blevet nysgerrig på? 
 
@@ -28,7 +28,7 @@
 
 * #### Hvordan anvender jeg det lærte til at løse opgaven? 
 
-    
+
 
 * #### Hvordan undersøger jeg muligheder til videre løsning?
 
