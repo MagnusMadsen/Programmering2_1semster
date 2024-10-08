@@ -2,11 +2,15 @@
 
 * #### Hvad lærte jeg om ugens emne?
 
-    Undervisningen gik for det meste ud på at bygge vores rover og prøve at sætte motorstyring over PWM på roveren. Min gruppe og jeg kigggede også ind i hvordan Arrays fungere og hvordan vi kunne bruge det til at sætte en struktur op i forskellige hastighedsparametre PWM på vores rovermotor
+    Undervisningen gik for det meste ud på at bygge vores rover og prøve at sætte motorstyring over PWM på roveren. Min gruppe og jeg kigggede også ind i hvordan Arrays fungere og hvordan vi kunne bruge det til at sætte en struktur op i forskellige hastighedsparametre PWM på vores rovermotor 
+
+    Vi er også blevet introduceret til ord som bitbanging og I2C adressering. 
 
 * #### Hvad bør jeg undersøge nærmere eller få svar på? 
 
     Jeg havde lidt svært ved at forstå alt det læslige vi skulle i denne uge. Af den oversag ville jeg sige at jeg burde undersøge vores læsestof mere. måske jeg burde gå ind og gennemgå vectors i codeacademy igen for at skabe en dybere og bedre forståelse. 
+
+    I2C adressering havde jeg faktisk til at starte med misforståe en smule. Men efter noget tid gik det op for mig at protokolen var bygget til at adressere flere enheder igennem de to samme ledninger og derved gøre det muligt at styre dataoverførselen ved at give den valgte enhed adresser som masterslaven styre.
 
 * #### Hvad er jeg blevet nysgerrig på?
 
