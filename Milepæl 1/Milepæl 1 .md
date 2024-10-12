@@ -1,19 +1,3 @@
-## Vejledning til studerende
-
-I dette dokument skal du i grove træk beskrive din løsning til milepælsopgaven.
-
-I skal kunne beskrive hvilke komponenter der er i basen, hvilket går i sektionen komponentliste.
-
-Derefter skal i beskrive basen. Dvs. besvar hvilke komponenter bliver brugt til hvad? 
-
-Hvordan er det blevet brugt? F.eks. hvilke funktioner giver det,
-
-Hvad var udfordringerne undervejs i at få komponenterne til at virke?
-
-Hvad virker godt/er du stolt af at have bygget?
-
-Det i skriver i journalmappen er jeres uge til uge reflektioner, så dette Milepælsdokument er en opsamling til det hele, en oversigt. Dette dokument skal ikke være mere end 1 side eller 2, mens journalen er mere detaljeret.
-
 ## Opgave 1 - Base - Milepælsopgave
 
 ### Komponentliste
@@ -38,7 +22,7 @@ Det i skriver i journalmappen er jeres uge til uge reflektioner, så dette Milep
 
     For at sikre, at vi nåede afleveringsdatoen for milepælen, byggede vi to versioner af roveren. Den ene blev styret mekanisk via knapper og en strømforsyning, og den anden blev styret trådløst via en ESP32. Roveren med ESP32 blev kodet med en simpel loop-struktur (void loops), hvor vi definerede bevægelser som frem, tilbage, højre og venstre med de rette analogWrite-værdier. Vi delte os op i to teams, hvor nogle arbejdede på at tilføje nye funktioner, mens resten finpudsede de grundlæggende funktioner. Alligevel sikrede vi os, at alle i gruppen blev inddraget og holdt opdateret.
 
-    På det tidspunkt havde vi en funktionel base, der kunne køre. Da vi var foran tidsplanen og stadig motiverede, tilføjede vi tre sensorer, der via if-statements i koden kunne styre motorerne automatisk baseret på sensorinput. Vi blev også enige om, at en rover ikke ville være komplet uden lys, så vi monterede baglygter, som blinkede, når den bakkede, hvilket vi styrede via analogWrite i vores “Reverse”-funktion. Vi kodede også en knap til at tænde og slukke roveren med digitalRead, så den blev nemmere at styre.
+    På dette tidspunkt havde vi en funktionel base, der kunne køre. Men da vi var foran tidsplanen og stadig motiverede, tilføjede vi tre sensorer, der via if-statements i koden kunne styre motorerne automatisk baseret på sensorinput. Vi blev også enige om, at en rover ikke ville være komplet uden lys, så vi monterede baglygter, som blinkede, når den bakkede, hvilket vi styrede via analogWrite i vores “Reverse”-funktion. Vi kodede også en knap til at tænde og slukke roveren med digitalRead, så den blev nemmere at styre.
 
 ### Hvilke udfordringer har jeg/vi haft
 
