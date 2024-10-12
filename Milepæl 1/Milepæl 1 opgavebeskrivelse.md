@@ -36,9 +36,16 @@ Det i skriver i journalmappen er jeres uge til uge reflektioner, så dette Milep
 
     Basen som det første har en basis plade som alt skulle samles på. Hvilket blev gjort for at kunne visuellisere vores koncept, videreudvikle på den viden vi havde fået og få mere motivation ved hver ny funktion vi puttede på. Det næste vi puttede på var motorere og hjul som er stripset fast. Herefter forsatte med placering af H-broer for at kunne styre disse motorer. Da vi var sikre på at forbindelser fungerede som ønsket lodet vi ledningerne fast så vi var sikre på at der ikke var løse forbindelser som kunne skabe usikkerhed i vores kode eller funktionaliteten af komponenterne. Vi valgte at gå to veje med vores roverere for at sikre at vi havde et færdigprodukt til afleveringsdato af første milepæl. En rover som blev styret mekanisk via knapper og strømforsyning og en rover der blev styret via en ESP32. Roveren som var bygget med ESP32'eren var kodet via void loops med de individuelle analogWrite værdier og navngav dem frem, tilbage, til højre og venstre osv. Vi delte os op, hvor nogle arbejdede på fremtidige funktioner og den anden halvdel på finpusningen af basis funktionaliteten. Men som gruppe har vi været gode til at inkludere hinanden, spørge om hjælp og videreformidle information så der ikke var nogle der ikke var med.
     
-    På daværende tidspunkt havde vi en funktionel base som kunne køre. Men da vi var i god tid og var motiveret til at lave mere fik vi sat 3 sensore på som via if statements i programmeringen kunne styre motorene automatisk afhængigt af hvilke input sensorne fik. Vi var også meget enige om at det ikke var en rover uden lys så vi fik sat lys på og kodet vores baglygter til kun at blinke når den bakkede via analogWrite og satte det ind i vores Reverse funktion så vi vidste at hver gang den bakkede så blinkede baglygterne. Hertil kodet vi også en knap som kunne tænde og slukke roveren så den var nemmere at styre. Dette blev gjort ved hjælp af  
+    På daværende tidspunkt havde vi en funktionel base som kunne køre. Men da vi var i god tid og var motiveret til at lave mere fik vi sat 3 sensore på som via if statements i programmeringen kunne styre motorene automatisk afhængigt af hvilke input sensorne fik. Vi var også meget enige om at det ikke var en rover uden lys så vi fik sat lys på og kodet vores baglygter til kun at blinke når den bakkede via analogWrite og satte det ind i vores Reverse funktion så vi vidste at hver gang den bakkede så blinkede baglygterne. Hertil kodet vi også en knap som kunne tænde og slukke roveren så den var nemmere at styre. Dette blev gjort ved hjælp af funktionen digtialread til at læse hvornår vores ONOFF knap bliver trykket. 
 
-    ### Hvad har jeg lært?: 
+    ### Hvilke udfordringer har jeg/vi haft
+
+     
+     
+
+    ### Hvad er jeg stolt af
+
+
 
     
 
