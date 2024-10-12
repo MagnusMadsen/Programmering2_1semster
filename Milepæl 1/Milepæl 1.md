@@ -1,4 +1,13 @@
+
 ## Opgave 1 - Base - Milepælsopgave
+
+Gruppe - 4 = Sebastian, Daniel, Andre, Lexar, Jacob og Magnus 
+
+Navn: Magnus Bøg Madsen
+Studienr: OITD27954
+Holdnr: ITOE24
+
+UCL Seebladsgade 1, Odense, 5000
 
 ### Komponentliste
 
