@@ -7,7 +7,9 @@
 4x Servomotor
 3D-printet arm
 3D-printet base
-MDF-printet base
+3D-printet Spacers
+MDF-skåret base
+
 
 ## Læringsudbytte
 ### Projektarbejde
