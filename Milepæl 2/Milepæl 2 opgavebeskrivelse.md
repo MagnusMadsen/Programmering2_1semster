@@ -11,7 +11,7 @@
 MDF-skåret base
 
 
-## Læringsudbytte
+## Læringsudbytte i de individuelle fag 
 ### Projektarbejde
 Dette projekt har givet os mulighed for at anvende og integrere avancerede teknologier som lasercutting og 3D-printning i udviklingen af en modulær og funktionel roverplatform. Lasercutting gav os præcisionsværktøjer til hurtigt at fremstille og iterativt tilpasse basens design, mens 3D-printning tillod os at skabe komplekse, skræddersyede komponenter. Denne iterative proces fremhævede vigtigheden af hurtig prototyping og designoptimering. Vi udviklede adskillige versioner af Roveren, hvilket ikke blot forbedrede den fysiske struktur, men også gav os dybere indsigt i, hvordan forskellige materialer og konfigurationer påvirker den samlede systemydelse. Den iterative fremgangsmåde har skærpet vores evne til kritisk at evaluere og forbedre teknologiske løsninger.
 
@@ -23,6 +23,8 @@ I arbejdet med indlejrede systemer har vi fokuseret på effektiv spændingsregul
 
 ### Trådløs forbindelse
 Ved at konfigurere ESP32 som et access point skabte vi en trådløs grænseflade til styring af eksterne enheder såsom LED’er. Denne øvelse demonstrerede potentialet for trådløs kontrol i fremtidige iterationer af Roveren, hvor fjernstyring og realtidsdataoverførsel vil være afgørende for at udvide systemets automatikation og fjernstyrelses funktionalitet.
+
+## Rover optimering
 
 ### Basens udvikling
 I forsøget på at finde det optimale materialevalg og design til Roverens base eksperimenterede vi med MDF, plexiglas og 3D-print. MDF og plexiglas viste sig at være strukturelt robuste, men deres vægt havde en negativ indvirkning på systemets energieffektivitet og sensornavigation. Den 3D-printede base, omend let og kompakt, introducerede nye udfordringer med hensyn til stabilitet under dynamiske belastninger, især når den mekaniske arm var i brug. Vi udviklede også en specialdesignet batteriboks med integreret buck converter for at sikre præcis og stabil strømfordeling til systemets forskellige moduler. 
