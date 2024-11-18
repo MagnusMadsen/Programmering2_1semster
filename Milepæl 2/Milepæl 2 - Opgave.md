@@ -39,7 +39,3 @@ På trods af de mange udfordringer er de nuværende iterationer af Roverne kende
 
 
 
-
-
-
-
