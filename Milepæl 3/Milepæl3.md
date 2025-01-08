@@ -15,7 +15,7 @@
 
 En kort gennemgang af hvad denne nye controller kan og hvordan den kommunikerer med roveren.
 
-Som en del af vores arbejde inden for Embedded-Systems, Programmering, Netværk og projektledelse har vi udviklet kompetencer i trådløs kommunikation ved brug af ESP-NOW. Der har været en del fejl på Joystikkets PCB som har gjort det nødvendigt at omlodde flere af forbindelserne til nye pins så vi har kunne sende de rette data fra de rette pins. 
+Som en del af vores arbejde inden for Embedded-Systems, Programmering, Netværk og projektledelse har vi udviklet kompetencer i trådløs kommunikation ved brug af ESP-NOW. Der har været en del fejl på Joystikkets PCB som har gjort det nødvendigt at omlodde flere af forbindelserne til nye pins så vi har kunne sende de rette data fra de rette pins. Foruden dette har vi skulle samle og skrue joystikket sammen, samt sammensætte de sidste dele af roveren og implementere dette i koden. 
 
 ## Projekt
 I projekt har fokuserede været på udviklingen af vores Rover. Interne gruppemøder blev brugt til at prioritere opgaver og fastlægge en strategi for projektet. Vi designede et standardiseret layout til ESP32, så de samme pins blev anvendt uanset Rover-base. Dette gjorde det muligt at skifte base uden at ændre koden, hvilket effektiviserede Roverudviklings processen.
@@ -30,8 +30,6 @@ Desuden lærte vi at lodde SMD-komponenter på vores controller-PCB, hvilket inv
 ## Programmering
 I programmering har forløbet taget meget fokus i ESP-NOW som bruges til kommunikation mellem ESP-LillyGo og ESP-32. ESP-NOW er en 2,4 GHz frekvens kommunikationsprotokol, som giver mulighed for at kommunikere selvstændigt via egen trådløs netværk. ESP1 Sender, kender ESP2 modtager's MAC-adresse og kommunikerer herigennem med hinanden. 
 
-I koden imellem de 
-
 
 #### Er der blevet brugt structs, funktioner, classes, og til hvad?
 
@@ -39,18 +37,33 @@ En struct kan defineres som en datastruktur, hvor i praksis bruger man structs t
 
 Klasser er et kraftfuldt værktøj i objektorienteret programmering, der gør det muligt at modellere komplekse systemer. F.eks. har vi gjort brug af classes i de fleste dele af vores kode for at gøre det mere overskueligt at kalde forskellige funktioner og voids i vores main kode. Derudover bliver src koden nemmere læselig og skaber et bedre overblik. 
 
+Funktioner tager ofte input, udfører en behandling eller operation og kan returnere et resultat. Men funktioner kan også være “void” (dvs. ikke returnere noget), som det ofte ses i indlejrede systemer som vores. Størstedelen af koden er derfor bygget op af void funktioner som skaber udførslen af de indlejerede komponenter på roveren og joystikket. Et par få eksempler kunne være vores rover og arm styrings-funktioner som nok er de vigtigte funktioner i hele koden. 
 
 
 #### Hvilke libraries er blevet brugt og til hvad? (#include statements)
 
-#### Hvordan har i anvendt metoder i har lært i undervisningen?
+Igennem projektet er der blevet tilføjet mange forskellige biblioteker som på hver sin måde påvirker individuelle dele af koden. ESP-now som er med til at sende koden frem og tilbage. Der er VL53L0X som er vores sensor bibliotek. Alle biblioteker at til fælles at gøre koden nemmere og derved kalde på funktioner som allerede ligger i disse biblioteker. 
 
 
 ## Udfordringer undervejs:
 
 ### Hvilke udfordringer mødte i undervejs?
 
+I vores arbejde med roveren har vi stødt på flere udfordringer, som har påvirket både præcisionen og funktionaliteten af roveren. En af de primære udfordringer under denne milepæl har været at opnå en glidende bevægelse af armen, således at den ikke udfører hakken eller ryk i de positioner, vi ønsker at kontrollere. Denne mangel på smidighed har været et centralt fokus. 
+
+Desuden har vi haft vanskeligheder med at integrere knapperne korrekt i koden. Vores oprindelige implementering af knapstyring resulterede i, at knapværdierne ikke skiftede fra true til false som ønskede, fordi at knappen kun fungere som strømledene når den var holdt inde. Denne fejl har krævet yderligere debugging og tilpasninger for at sikre korrekt og pålidelig interaktion med knapperne. 
+
+Den hidtil største udfordring har været multi-threading og dertil core/task modulering. Hver gang vi har tilføjet en ny task har der været problemer med sensor, motor og andre funktioner i koden. Dette har medført restruktureing af flere omgange over hele koden. 
+
 ### Hvordan løste/har i tænkt jer at løse det?
 
+Vores fejl med arm præcision og funktionalitet blev løst ved at ændre vtask delay'en og tilpasse vores increment ændringer. 
+
+vores knap-problem blev løst ved omstruktureing af vores knapfunktion så den fungerede med en knapstate som skiftede hver gang knappen så en ændring og derved ikke var afhængig af direkte respons fra knappen. 
+
+Vores multi-threading problem har ikke rigtig nogen specifik løsning. Det har været små ændringer rundt omkring for at få de enkelte dele til at virke. Dog har det været nødvendigt at implementere statiske voids og omdanne funktioners resultater til et objekt datastruktur som vores main multi-thread kode kunne håndtere. 
+
 ### Hvorfor tror i de opstod?
+
+Problemerne er opstået på baggrund af uvidenhed overfor funktionallitetten af de individuelle funktionstrukturer og komponenter.
 
