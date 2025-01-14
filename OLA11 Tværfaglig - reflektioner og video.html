@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>OLA11 Tværfaglig - reflektioner og video.md</title>
+<meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+
+<style>
+/* https://github.com/microsoft/vscode/blob/master/extensions/markdown-language-features/media/markdown.css */
+/*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Microsoft Corporation. All rights reserved.
+ *  Licensed under the MIT License. See License.txt in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+
+body {
+	font-family: var(--vscode-markdown-font-family, -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif);
+	font-size: var(--vscode-markdown-font-size, 14px);
+	padding: 0 26px;
+	line-height: var(--vscode-markdown-line-height, 22px);
+	word-wrap: break-word;
+}
+
+#code-csp-warning {
+	position: fixed;
+	top: 0;
+	right: 0;
+	color: white;
+	margin: 16px;
+	text-align: center;
+	font-size: 12px;
+	font-family: sans-serif;
+	background-color:#444444;
+	cursor: pointer;
+	padding: 6px;
+	box-shadow: 1px 1px 1px rgba(0,0,0,.25);
+}
+
+#code-csp-warning:hover {
+	text-decoration: none;
+	background-color:#007acc;
+	box-shadow: 2px 2px 2px rgba(0,0,0,.25);
+}
+
+body.scrollBeyondLastLine {
+	margin-bottom: calc(100vh - 22px);
+}
+
+body.showEditorSelection .code-line {
+	position: relative;
+}
+
+body.showEditorSelection .code-active-line:before,
+body.showEditorSelection .code-line:hover:before {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0;
+	left: -12px;
+	height: 100%;
+}
+
+body.showEditorSelection li.code-active-line:before,
+body.showEditorSelection li.code-line:hover:before {
+	left: -30px;
+}
+
+.vscode-light.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.15);
+}
+
+.vscode-light.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.40);
+}
+
+.vscode-light.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+.vscode-dark.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.4);
+}
+
+.vscode-dark.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.60);
+}
+
+.vscode-dark.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+.vscode-high-contrast.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 160, 0, 0.7);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 160, 0, 1);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+img {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+a:focus,
+input:focus,
+select:focus,
+textarea:focus {
+	outline: 1px solid -webkit-focus-ring-color;
+	outline-offset: -1px;
+}
+
+hr {
+	border: 0;
+	height: 2px;
+	border-bottom: 2px solid;
+}
+
+h1 {
+	padding-bottom: 0.3em;
+	line-height: 1.2;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+}
+
+h1, h2, h3 {
+	font-weight: normal;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+table > thead > tr > th {
+	text-align: left;
+	border-bottom: 1px solid;
+}
+
+table > thead > tr > th,
+table > thead > tr > td,
+table > tbody > tr > th,
+table > tbody > tr > td {
+	padding: 5px 10px;
+}
+
+table > tbody > tr + tr > td {
+	border-top: 1px solid;
+}
+
+blockquote {
+	margin: 0 7px 0 5px;
+	padding: 0 16px 0 10px;
+	border-left-width: 5px;
+	border-left-style: solid;
+}
+
+code {
+	font-family: Menlo, Monaco, Consolas, "Droid Sans Mono", "Courier New", monospace, "Droid Sans Fallback";
+	font-size: 1em;
+	line-height: 1.357em;
+}
+
+body.wordWrap pre {
+	white-space: pre-wrap;
+}
+
+pre:not(.hljs),
+pre.hljs code > div {
+	padding: 16px;
+	border-radius: 3px;
+	overflow: auto;
+}
+
+pre code {
+	color: var(--vscode-editor-foreground);
+	tab-size: 4;
+}
+
+/** Theming */
+
+.vscode-light pre {
+	background-color: rgba(220, 220, 220, 0.4);
+}
+
+.vscode-dark pre {
+	background-color: rgba(10, 10, 10, 0.4);
+}
+
+.vscode-high-contrast pre {
+	background-color: rgb(0, 0, 0);
+}
+
+.vscode-high-contrast h1 {
+	border-color: rgb(0, 0, 0);
+}
+
+.vscode-light table > thead > tr > th {
+	border-color: rgba(0, 0, 0, 0.69);
+}
+
+.vscode-dark table > thead > tr > th {
+	border-color: rgba(255, 255, 255, 0.69);
+}
+
+.vscode-light h1,
+.vscode-light hr,
+.vscode-light table > tbody > tr + tr > td {
+	border-color: rgba(0, 0, 0, 0.18);
+}
+
+.vscode-dark h1,
+.vscode-dark hr,
+.vscode-dark table > tbody > tr + tr > td {
+	border-color: rgba(255, 255, 255, 0.18);
+}
+
+</style>
+
+<style>
+/* Tomorrow Theme */
+/* http://jmblog.github.com/color-themes-for-google-code-highlightjs */
+/* Original theme - https://github.com/chriskempson/tomorrow-theme */
+
+/* Tomorrow Comment */
+.hljs-comment,
+.hljs-quote {
+	color: #8e908c;
+}
+
+/* Tomorrow Red */
+.hljs-variable,
+.hljs-template-variable,
+.hljs-tag,
+.hljs-name,
+.hljs-selector-id,
+.hljs-selector-class,
+.hljs-regexp,
+.hljs-deletion {
+	color: #c82829;
+}
+
+/* Tomorrow Orange */
+.hljs-number,
+.hljs-built_in,
+.hljs-builtin-name,
+.hljs-literal,
+.hljs-type,
+.hljs-params,
+.hljs-meta,
+.hljs-link {
+	color: #f5871f;
+}
+
+/* Tomorrow Yellow */
+.hljs-attribute {
+	color: #eab700;
+}
+
+/* Tomorrow Green */
+.hljs-string,
+.hljs-symbol,
+.hljs-bullet,
+.hljs-addition {
+	color: #718c00;
+}
+
+/* Tomorrow Blue */
+.hljs-title,
+.hljs-section {
+	color: #4271ae;
+}
+
+/* Tomorrow Purple */
+.hljs-keyword,
+.hljs-selector-tag {
+	color: #8959a8;
+}
+
+.hljs {
+	display: block;
+	overflow-x: auto;
+	color: #4d4d4c;
+	padding: 0.5em;
+}
+
+.hljs-emphasis {
+	font-style: italic;
+}
+
+.hljs-strong {
+	font-weight: bold;
+}
+</style>
+
+<style>
+/*
+ * Markdown PDF CSS
+ */
+
+ body {
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif, "Meiryo";
+	padding: 0 12px;
+}
+
+pre {
+	background-color: #f8f8f8;
+	border: 1px solid #cccccc;
+	border-radius: 3px;
+	overflow-x: auto;
+	white-space: pre-wrap;
+	overflow-wrap: break-word;
+}
+
+pre:not(.hljs) {
+	padding: 23px;
+	line-height: 19px;
+}
+
+blockquote {
+	background: rgba(127, 127, 127, 0.1);
+	border-color: rgba(0, 122, 204, 0.5);
+}
+
+.emoji {
+	height: 1.4em;
+}
+
+code {
+	font-size: 14px;
+	line-height: 19px;
+}
+
+/* for inline code */
+:not(pre):not(.hljs) > code {
+	color: #C9AE75; /* Change the old color so it seems less like an error */
+	font-size: inherit;
+}
+
+/* Page Break : use <div class="page"/> to insert page break
+-------------------------------------------------------- */
+.page {
+	page-break-after: always;
+}
+
+</style>
+
+<script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
+</head>
+<body>
+  <script>
+    mermaid.initialize({
+      startOnLoad: true,
+      theme: document.body.classList.contains('vscode-dark') || document.body.classList.contains('vscode-high-contrast')
+          ? 'dark'
+          : 'default'
+    });
+  </script>
+<h1 id="ola11-tv%C3%A6rfaglig---reflektioner">OLA11 Tværfaglig - reflektioner</h1>
+<h3 id="af-magnus-mathias-b%C3%B8g-madsen">Af Magnus Mathias Bøg Madsen</h3>
+<p>Studienr: OITD27954
+Holdnr: ITOE24</p>
+<p>UCL Seebladsgade 1, Odense, 5000</p>
+<h2 id="milep%C3%A6ls-opgave-1---base">Milepæls Opgave 1 - Base</h2>
+<h2 id="gruppe-4-medlemmer-daniel-lexar-andr%C3%A9-sebastian--magnus">Gruppe 4, Medlemmer: Daniel, Lexar, André, Sebastian &amp; Magnus</h2>
+<h3 id="komponentliste">Komponentliste</h3>
+<pre><code>8x Hjul
+8x Motor
+5x Sensor
+3x H-broer
+2x ESP32 Wroom 
+2x Hvide dioder
+2X Røde dioder
+2x Pleksi base
+4x Fumlebræt 
+Mange ledninger 
+</code></pre>
+<h3 id="beskrivelse-af-basen">Beskrivelse af basen</h3>
+<pre><code>Som det første planlagde vi som gruppe mål og visioner samt brainstormede på, hvad vi ønskede at opnå inden for uddannelsens tidsramme. Planlægningen var afgørende, da den gjorde det muligt for os at følge vores fremskridt og se, hvor meget vi udviklede os. Det gav os også motivation til at fortsætte med at idéudvikle, hver gang vi løste et problem.
+
+Vores base startede med en simpel plade, hvor alt blev samlet. Det hjalp os med at visualisere konceptet og videreudvikle det, vi havde lært, hvilket gav ny motivation for hver funktion, vi tilføjede. Dernæst monterede vi motorer og hjul, som vi fastgjorde med strips. Herefter placerede vi H-broerne, så vi kunne styre motorerne. Da vi var sikre på, at alle forbindelser fungerede korrekt, lodede vi ledningerne fast for at undgå løse forbindelser, der kunne skabe problemer i koden eller påvirke komponenternes funktion.
+
+For at sikre, at vi nåede afleveringsdatoen for milepælen, byggede vi to versioner af roveren. Den ene blev styret mekanisk via knapper og en strømforsyning, og den anden blev styret trådløst via en ESP32. Roveren med ESP32 blev kodet med en simpel loop-struktur (void loops), hvor vi definerede bevægelser som frem, tilbage, højre og venstre med de rette analogWrite-værdier. Vi delte os op i to teams, hvor nogle arbejdede på at tilføje nye funktioner, mens resten finpudsede de grundlæggende funktioner. Alligevel sikrede vi os, at alle i gruppen blev inddraget og holdt opdateret.
+
+På dette tidspunkt havde vi en funktionel base, der kunne køre. Men da vi var foran tidsplanen og stadig motiverede, tilføjede vi tre sensorer, der via if-statements i koden kunne styre motorerne automatisk baseret på sensorinput. Vi blev også enige om, at en rover ikke ville være komplet uden lys, så vi monterede baglygter, som blinkede, når den bakkede, hvilket vi styrede via analogWrite i vores “Reverse”-funktion. Vi kodede også en knap til at tænde og slukke roveren med digitalRead, så den blev nemmere at styre.
+</code></pre>
+<h3 id="hvilke-udfordringer-har-jegvi-haft">Hvilke udfordringer har jeg/vi haft</h3>
+<pre><code>De første fire uger har været en stejl læringskurve. Det er imponerende, hvor meget man kan lære på kort tid, men det har også været udfordrende at følge med. Der har været mange lektier og opgaver, som alle har været vigtige, hvilket gjorde det svært at prioritere fagene.
+
+Gruppearbejde er en stor del af uddannelsen, hvilket betyder, at der har været meget pres på at finde fælles motivation, kommunikere godt og løfte gruppens indsats for at opnå et godt resultat. Det har også krævet, at vi skulle gøre plads til forskellige personligheder og vide, hvornår vi skulle tage diskussioner, og hvornår vi skulle lade dem ligge. Selvom vi som gruppe har fungeret godt, er det en løbende udfordring, vi skal være bevidste om.
+
+Jeg har haft udfordringer i alle fag, lige fra at få programmerne til at fungere til at forstå grundlæggende kode eller breadboard-opbygning. Gennem oplæsning, hjælp fra gruppen og feedback fra underviseren er mange af de udfordringer, vi har mødt, blevet løst. For eksempel havde jeg svært ved at forstå H-broer, men efter at have eksperimenteret med dem og sat mig ind i, hvordan kondensatorer fungerer, har jeg fået en bedre forståelse. Do-while loops er dog stadig noget, jeg skal arbejde videre med. Elektromagnetisme og strømoverførsel på elektronisk niveau er også områder, hvor jeg stadig er usikker.
+</code></pre>
+<h3 id="hvad-er-jeg-stolt-af">Hvad er jeg stolt af</h3>
+<pre><code>Jeg er meget stolt af det gode samarbejde, vi har haft i gruppen. Vi har konstant presset grænserne for, hvad vi kunne opnå med vores læring, og det har resulteret i en funktionel rover, der kan køre “automatisk” baseret på sensorinformationer. Jeg er også stolt af, at vi som gruppe har prioriteret hinandens styrker og arbejdet som et team i stedet for at konkurrere internt om, hvem der kunne mest.
+</code></pre>
+<h3 id="selvreflektion">Selvreflektion</h3>
+<pre><code>Teknisk set har jeg lært en del om både hardware og programmering, specielt i forhold til integrationen af forskellige komponenter som motorer, sensorer og H-broer. Før dette projekt havde jeg meget lidt til ingen erfaring med H-broer og programmering som helhed, men nu har jeg opnået en dybere forståelse af, hvordan man kan styre indlejrede systemer, både gennem kode og hardware. Det var utrolig spændende at se, hvordan små justeringer i koden kunne påvirke roveren og dens bevægelser.
+
+Dette projekt har indtil videre givet mig mulighed for at identificere flere forskellige svagheder, og jeg ved nu, hvilke områder jeg skal arbejde videre med for at styrke mine kompetencer.
+
+På et personligt plan har jeg lært meget om samarbejde i grupper. Jeg har oplevet, hvor vigtigt det er at kunne lytte til andres idéer og indgå kompromisser, især når forskellige personligheder skal arbejde sammen. Jeg er blevet bedre til at kommunikere klart og konstruktivt med mine medstuderende, hvilket jeg føler har gjort vores gruppe mere effektiv.
+
+En vigtig læring for mig har været at give plads til andres input, samtidig med at jeg har været bevidst om, hvornår det var nødvendigt at tage en beslutning eller handle hurtigt. Dette har lært mig en balance mellem at tage ansvar og inddrage mine gruppekammerater i beslutningsprocessen.
+
+Jeg er stolt af, hvordan jeg har håndteret de mange tekniske udfordringer undervejs. Jeg startede ud med begrænset viden om visse emner, men i stedet for at give op har jeg arbejdet målrettet på at lære mere. Når jeg har stået over for problemer, som f.eks. at få H-broer til at fungere, har jeg brugt tid på at eksperimentere og søge hjælp, hvilket har været en lærerig proces. Jeg har også indset, hvor vigtigt og værdifuldt det er at kunne spørge om hjælp fra mine gruppekammerater og undervisere, når jeg støder på noget, jeg ikke forstår fuldt ud.
+</code></pre>
+<h2 id="milep%C3%A6lsopgave-2---robotstyret-arm">Milepælsopgave 2 - Robotstyret arm</h2>
+<h2 id="gruppe-4-medlemmer-daniel-lexar-andr%C3%A9-sebastian--magnus">Gruppe 4, Medlemmer: Daniel, Lexar, André, Sebastian &amp; Magnus</h2>
+<h3 id="komponentliste">Komponentliste</h3>
+<p>4x Servomotor
+3D-printet arm
+3D-printet base
+3D-printet Spacers
+MDF-skåret base</p>
+<h2 id="l%C3%A6ringsudbytte-i-de-individuelle-fag">Læringsudbytte i de individuelle fag</h2>
+<h3 id="projektarbejde">Projektarbejde</h3>
+<p>Dette projekt har givet os mulighed for at anvende og integrere avancerede teknologier som lasercutting og 3D-printning i udviklingen af en modulær og funktionel roverplatform. Lasercutting gav os præcisionsværktøjer til hurtigt at fremstille og iterativt tilpasse basens design, mens 3D-printning tillod os at skabe komplekse, skræddersyede komponenter. Denne iterative proces fremhævede vigtigheden af hurtig prototyping og designoptimering. Vi udviklede adskillige versioner af Roveren, hvilket ikke blot forbedrede den fysiske struktur, men også gav os dybere indsigt i, hvordan forskellige materialer og konfigurationer påvirker den samlede systemydelse. Den iterative fremgangsmåde har skærpet vores evne til kritisk at evaluere og forbedre teknologiske løsninger.</p>
+<h3 id="programmering">Programmering</h3>
+<p>Softwareudviklingen fulgte en streng objektorienteret tilgang for at maksimere modularitet og genanvendelighed. Overgangen fra structs til klasser var en bevidst designbeslutning, der afspejlede vores intention om at skabe en skalerbar kodebase. I første fase implementerede vi strukturer for at etablere en grundlæggende datastruktur til mindre projekter, såsom vores bankapplikation. Derefter migrerede vi til klasser og objekter, hvilket gjorde det muligt at definere og manipulere komplekse datastrukturer på en mere organiseret måde. I Rover-projektet blev denne tilgang anvendt til motor- og sensorkontrol, hvilket ikke blot forenklede koden, men også reducerede risikoen for fejl og gjorde fremtidige udvidelser nemmere. Vores fokus på softwarearkitektur har givet en robust platform for yderligere systemintegration og optimering.</p>
+<h3 id="indlejrede-systemer-og-elektronik">Indlejrede systemer og elektronik</h3>
+<p>I arbejdet med indlejrede systemer har vi fokuseret på effektiv spændingsregulering og præcis motorstyring. Anvendelsen af buck-converters muliggjorde en præcis justering af strømforsyningen, hvilket var afgørende for stabil drift af de individuelle dele på roveren. For at sikre en dybere forståelse af kredsløbsdynamik implementerede vi Kirchhoffs lov til analyse af forskellige fiktive kredsløb. PWM-styring blev undersøgt som en central metode til styring af både vores DC- og servomotorer, hvor vi analyserede respons og effektivitet under forskellige belastninger. Vi anvendte avancerede måleinstrumenter, herunder oscilloskop og triple channel power supply, hvilket gav os et Frekvens og Hz datasæt til optimering af det elektroniske kredsløb. Denne proces understregede nødvendigheden af præcise målinger og analytiske værktøjer i systemudvikling, da det påvirkede vores duty circle og den pulseregulering der styrede vores komponenter.</p>
+<h3 id="tr%C3%A5dl%C3%B8s-forbindelse">Trådløs forbindelse</h3>
+<p>Ved at konfigurere ESP32 som et access point skabte vi en trådløs grænseflade til styring af eksterne enheder såsom LED’er. Denne øvelse demonstrerede potentialet for trådløs kontrol i fremtidige iterationer af Roveren, hvor fjernstyring og realtidsdataoverførsel vil være afgørende for at udvide systemets automatikation og fjernstyrelses funktionalitet.</p>
+<h2 id="rover-optimering">Rover optimering</h2>
+<h3 id="basens-udvikling">Basens udvikling</h3>
+<p>I forsøget på at finde det optimale materialevalg og design til Roverens base eksperimenterede vi med MDF, plexiglas og 3D-print. MDF og plexiglas viste sig at være strukturelt robuste, men deres vægt havde en negativ indvirkning på systemets energieffektivitet og sensornavigation. Den 3D-printede base, omend let og kompakt, introducerede nye udfordringer med hensyn til stabilitet under dynamiske belastninger, især når den mekaniske arm var i brug. Vi udviklede også en specialdesignet batteriboks med integreret buck converter for at sikre præcis og stabil strømfordeling til systemets forskellige moduler.</p>
+<h3 id="udfordringer">Udfordringer</h3>
+<p>Projektet afslørede flere tekniske og metodologiske udfordringer. Integration af klasser og structs i koden medførte kompleksitet og fejlsøgning, hvilket krævede en refaktorisering af hele kodebasen. Vi erfarede, at en konsistent objektorienteret tilgang var mere hensigtsmæssig for at sikre en skalerbar og vedligeholdelsesvenlig struktur. Hardwareudfordringer opstod også som følge af ændringer i basens fysiske dimensioner og vægt, hvilket påvirkede sensorernes effektivitet. Sensorernes blinde zoner og nedsat præcision i navigationen krævede gentagne justeringer og designiterationer. Energiforsyningen viste sig at være en kritisk faktor. Med forskellige spændingskrav fra ESP32, H-broer og servomotorer var det nødvendigt at implementere et mere avancerede strømstyringssystem. En kombination af buck converter og en serieforbundet batteripakke blev anvendt for at opnå optimal strømforsyning.</p>
+<p>Desuden stødte vi på et mindre problemer med kodningen af den mekaniske arm. Selvom vi kunne få armen til at udføre de ønskede bevægelser ved brug af vores controller, opstod der et uventet fænomen: efter at have frigivet controlleren, vendte armen konsekvent tilbage til sin nulposition. Denne adfærd indikerer en ukorrekt specificering i positioneringskoden.</p>
+<h3 id="styrker-ved-roveren">Styrker ved Roveren</h3>
+<p>På trods af de mange udfordringer er de nuværende iterationer af Roverne kendetegnet ved en høj grad af modularitet og fleksibilitet. Den objektorienterede softwarestruktur muliggør nem tilføjelse af nye funktionaliteter, mens den iterative udviklingsproces har sikret en velafbalanceret hardwareplatform. Kombinationen af letvægtsmaterialer og avancerede strømstyringsløsninger gør Roveren til en fremtidssikret platform, der kan skaleres og tilpasses til en bred vifte af applikationer. Denne proces har styrket vores forståelse af komplekse systemintegrationer og givet os en solid basis for videreudvikling og forskning inden for robotteknologi.</p>
+<h2 id="milep%C3%A6l-opgave-3---joystick-og-fjernstyring">Milepæl Opgave 3 - Joystick og Fjernstyring</h2>
+<h2 id="gruppe-4-medlemmer-daniel-lexar-andr%C3%A9-sebastian--magnus">Gruppe 4, Medlemmer: Daniel, Lexar, André, Sebastian &amp; Magnus</h2>
+<h2 id="komponentliste">Komponentliste</h2>
+<p>2x joystick
+1x pcb board
+2x SMD capacitor
+2x SMD resistor
+1x liligo T-display
+6x jumper wires
+2x Knapper</p>
+<h2 id="beskrivelse-af-joystick-samt-hvordan-i-har-f%C3%A5et-fjernstyring-til-at-virke">Beskrivelse af joystick samt hvordan i har fået fjernstyring til at virke</h2>
+<p>Som en del af vores arbejde indenfor Embedded-Systems, Programmering, Netværk og projektledelse har vi udviklet kompetencer i trådløs kommunikation ved brug af ESP-NOW. Der har været en del fejl på Joystikkets PCB som har gjort det nødvendigt at omlodde flere af forbindelserne til nye pins så vi har kunne sende de rette data fra de rette pins. Foruden dette har vi skulle samle og skrue joystikket sammen, samt sammensætte de sidste dele af roveren og implementere dette i koden.</p>
+<h2 id="projekt">Projekt</h2>
+<p>I projekt har fokuserede været på udviklingen af vores Rover. Interne gruppemøder blev brugt til at prioritere opgaver og fastlægge en strategi for projektet. Vi designede et standardiseret layout til ESP32, så de samme pins blev anvendt uanset Rover-base. Dette gjorde det muligt at skifte base uden at ændre koden, hvilket effektiviserede Roverudviklings processen.</p>
+<p>Der er blevet arbejdedet ud fra kravspecifikationerne, for at sikre fokus og effektivitet. Samt for at minimere potentielle fejl og undgå unødvendige problemer. Denne strukturerede tilgang sikrede både fleksibilitet og robusthed i vores løsning.</p>
+<h2 id="embedded-systems">Embedded systems</h2>
+<p>Embedded systems har omfattet en række tekniske emner med fokus på kredsløb og komponenter, robotarmen, joystick, ESP32-kommunikationsprotokoller og binære koder.</p>
+<p>Desuden lærte vi at lodde SMD-komponenter på vores controller-PCB, hvilket involverede præcisionsarbejde med ultra små modstande under brug af et præcistions-mikroskop.</p>
+<h2 id="programmering">Programmering</h2>
+<p>I programmering har forløbet taget meget fokus i ESP-NOW som bruges til kommunikation mellem ESP-LillyGo og ESP-32. ESP-NOW er en 2,4 GHz frekvens kommunikationsprotokol, som giver mulighed for at kommunikere selvstændigt via egen trådløs netværk. ESP1 Sender, kender ESP2 modtager's MAC-adresse og kommunikerer herigennem med hinanden.</p>
+<h4 id="er-der-blevet-brugt-structs-funktioner-classes-og-til-hvad">Er der blevet brugt structs, funktioner, classes, og til hvad?</h4>
+<p>En struct kan defineres som en datastruktur, hvor i praksis bruger man structs til at organisere data på en mere overskuelig måde. Det er især nyttigt, når vi har flere attributter, der logisk hænger sammen. For eksempel, gør vi brug af struct til at sende data imellem joystik og rover fordi det gør det muligt at samle flere forskellige datatyper under ét tag.</p>
+<p>Klasser er et kraftfuldt værktøj i objektorienteret programmering, der gør det muligt at modellere komplekse systemer. F.eks. har vi gjort brug af classes i de fleste dele af vores kode for at gøre det mere overskueligt at kalde forskellige funktioner og voids i vores main kode. Derudover bliver src koden nemmere læselig og skaber et bedre overblik.</p>
+<p>Funktioner tager ofte input, udfører en behandling eller operation og kan returnere et resultat. Men funktioner kan også være “void” (dvs. ikke returnere noget), som det ofte ses i indlejrede systemer som vores. Størstedelen af koden er derfor bygget op af void funktioner som skaber udførslen af de indlejerede komponenter på roveren og joystikket. Et par få eksempler kunne være vores rover og arm styrings-funktioner som nok er de vigtigste funktioner i hele koden.</p>
+<h4 id="hvilke-libraries-er-blevet-brugt-og-til-hvad-include-statements">Hvilke libraries er blevet brugt og til hvad? (#include statements)</h4>
+<p>Igennem projektet er der blevet tilføjet mange forskellige biblioteker som på hver sin måde påvirker individuelle dele af koden. ESP-now som er med til at sende koden frem og tilbage. Der er VL53L0X som er vores sensor bibliotek. Alle biblioteker har tilfælles at gøre koden nemmere og derved kalde på funktioner som allerede ligger i disse biblioteker.</p>
+<h2 id="udfordringer-undervejs">Udfordringer undervejs:</h2>
+<h3 id="hvilke-udfordringer-m%C3%B8dte-i-undervejs">Hvilke udfordringer mødte i undervejs?</h3>
+<p>I vores arbejde med roveren har vi stødt på flere udfordringer, som har påvirket både præcisionen og funktionaliteten af roveren. En af de primære udfordringer under denne milepæl har været at opnå en glidende bevægelse af armen, således at den ikke udfører hakken eller ryk i de positioner. Denne mangel på smidighed har været et centralt fokus.</p>
+<p>Desuden har vi haft vanskeligheder med at integrere knapperne korrekt i koden. Vores oprindelige implementering af knapstyring resulterede i knapværdierne ikke skiftede fra true til false som ønskede. Dette skete fordi at knappen kun fungere som strømledene når den var holdt inde. Denne fejl har krævet yderligere debugging og tilpasninger for at sikre korrekt og pålidelig interaktion med knapperne.</p>
+<p>Den hidtil største udfordring har været multi-threading og dertil core/task modulering. Hver gang vi har tilføjet en ny task har der været problemer med sensor, motor og andre funktioner i koden. Dette har medført restruktureing af flere omgange over hele koden.</p>
+<h3 id="hvordan-l%C3%B8stehar-i-t%C3%A6nkt-jer-at-l%C3%B8se-det">Hvordan løste/har i tænkt jer at løse det?</h3>
+<p>Vores fejl med arm-præcision og funktionalitet blev løst ved at ændre vtask delay'en og tilpasse vores increment ændringer.</p>
+<p>vores knap-problem blev løst ved omstruktureing af vores knapfunktion så den fungerede med en knapstate som skiftede hver gang knappen så en ændring og derved ikke var afhængig af direkte respons fra knappen.</p>
+<p>Vores multi-threading problem har ikke rigtig nogen specifik løsning. Det har været små ændringer rundt omkring for at få de enkelte dele til at virke. Dog har det været nødvendigt at implementere statiske voids og omdanne funktioners resultater til et objekteret datastruktur som vores main multi-thread kode kunne forstå og håndtere.</p>
+<h3 id="hvorfor-tror-i-de-opstod">Hvorfor tror i de opstod?</h3>
+<p>Problemerne er opstået på baggrund af uvidenhed overfor funktionallitetten af de individuelle funktionstrukturer og komponenter.</p>
+
+</body>
+</html>
